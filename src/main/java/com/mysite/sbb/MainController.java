@@ -9,10 +9,16 @@ public class MainController {
     @GetMapping("/")
     public void home() {
         System.out.println("Home page requested");
+        this.contact();
     }
 
     @GetMapping("/about")
     public void about() {
         System.out.println("about");
+        this.contact();
+    }
+
+    public void contact() {
+        System.out.println("contact");
     }
 }
